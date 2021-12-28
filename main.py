@@ -12,7 +12,7 @@ intents = json.loads(open('intensts.json').read())
 words = []
 classes = []
 documents = []
-ignore_letters = ['?', '!', '.', ',']
+ignore_letters = []
 for intent in intents['intents']:
      for pattern in intent['patterns']:
         word_list = nltk.word_tokenize(pattern)
